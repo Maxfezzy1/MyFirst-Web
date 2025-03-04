@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Ifenna Javascript
+</title>
+
+
+</head>
+<body>
+
+<h1>My First JavaScript</h1>
+<p>Here, JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<script>
+function light(sw) {
+  var pic;
+  if (sw == 0) {
+    pic = "Images/pic_bulboff.gif"
+  } else {
+    pic = "Images/pic_bulbon.gif"
+  }
+  document.getElementById('myImage').src = pic;
+}
+</script>
+
+<img id="myImage" src="Images/pic_bulbon.gif" width="100" height="180">
+
+<p>
+<button type="button" onclick="light(1)">If you wan On Light</button>
+<button type="button" onclick="light(0)">If you go like Off the Light</button>
+</p>
+
+</body>
+</html>
